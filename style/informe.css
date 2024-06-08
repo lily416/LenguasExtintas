@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    background-color: #c5c5c5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: auto 10%;
+    padding: 50px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.descripcion {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.descripcion p {
+    margin: 0;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.tarea, .header {
+    padding: 5px 10px;
+    background-color: #c5c5c556;
+    border-left: 5px solid #3baaad;
+}
+
+.grupo {
+    padding: 0px 15px;
+    border-left: 5px solid #3baaad;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-top: 50px;
+}

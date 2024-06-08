@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguas extintas</title>
+    
+    <script src="https:/d3js.org/d3.v6.min.js"></script>
+    <script src="https:/d3js.org/d3-collection.v1.min.js"></script>
+    <script src="https:/d3js.org/d3-geo-projection.v3.min.js"></script>
+    <script src="https:/d3js.org/d3-scale.v3.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+<body>
+    <h1>Lenguas extintas y en peligro</h1>
+    <div id="view">
+        <div id="information">
+            <div id="switchContainer">
+            <h3>Mostrar</h3>
+                <p>Cantidad de hablantes</p>                    
+                <label class="switch">
+                    <input type="checkbox" checked id="speakersSwitch">
+                    <span class="slider round"></span>
+                </label>
+                <p>Conexiones entre familias</p>                    
+                <label class="switch">
+                    <input type="checkbox" id="connectionSwitch">
+                    <span class="slider round"></span>
+                </label>
+            <!-- </div> -->
+            <h3>Filtrar</h3>
+            <!-- <div id="switchContainer"> -->
+                <h4>Grado de peligro</h4>
+                <p>Vulnerable</p>                    
+                <label class="switch">
+                    <input type="checkbox" checked id="vulnerableSwitch">
+                    <span class="slider round"></span>
+                </label>
+                <p>Definitivamente en peligro</p>                    
+                <label class="switch">
+                    <input type="checkbox" checked id="definitelySwitch">
+                    <span class="slider round"></span>
+                </label>
+                <p>Severo peligro</p>                    
+                <label class="switch">
+                    <input type="checkbox" checked id="severelySwitch">
+                    <span class="slider round"></span>
+                </label>
+                <p>Peligro crítico</p>                    
+                <label class="switch">
+                    <input type="checkbox" checked id="criticallySwitch">
+                    <span class="slider round"></span>
+                </label>
+                <p>Extinto</p>                    
+                <label class="switch">
+                    <input type="checkbox" checked id="extinctSwitch">
+                    <span class="slider round"></span>
+                </label>
+            <h4>Cantidad de hablantes</h4>
+            <section class="range-slider">
+                <span class="rangeValues">0 - 7.000+</span>
+                <input value="0" min="0" max="7000" step="10" type="range">
+                <input value="7000" min="0" max="7000" step="10" type="range">
+            </section>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    
+</body>
+<script src="script/script.js"></script>
+</html>
